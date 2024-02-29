@@ -14,6 +14,6 @@ $query->bindParam(':ageSpanYear', $_POST['ageSpanYear']);
 $query->bindParam(':picture', $_POST['picture']);
 $query->execute();
 
-header('Location: birdsOfPray.php');
+header('Location: birdCollection.php');
 ?>
 
