@@ -65,7 +65,7 @@ body {
      height:55px;
      width: 170px;
      border-radius: 10px;
-     border: 2px solid rgb(162, 133, 31);
+     border: 2px outset rgb(162, 133, 31);
      background-color: #c8aa48;
      color: #2a3a27;
      font-family: "Shadows Into Light", cursive;

@@ -7,14 +7,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@700&family=Lora:ital,wght@1,500&family=Playfair+Display:ital@1&family=Shadows+Into+Light&display=swap"
           rel="stylesheet">
-    <link rel="icon" type="IMG/x-icon" href="IMG/favicon2.ico">
+    <link rel="icon" type="IMG/x-icon" href="IMG/favicon.ico">
 </head>
 <body>
 
 <?php
-$db = new PDO('mysql:host=db; dbname=birdwatching', 'root', 'password');
-$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-$db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+require_once 'dbLink.php';
 
 $query = $db->prepare('SELECT `id`, `name`, `color`, `season`, `habitat`, `estimatedUKpopulation`, `ageSpanYear`, `picture` FROM `birds` WHERE `deleted` is NULL;');
 
