@@ -2,8 +2,6 @@ html{
     scroll-behavior: smooth;
 }
 body {
-    /*background: #ded9ff;*/
-    /*background: linear-gradient(#456040, #85af58, #225443);*/
     background-image: url("IMG/BlackBirdBackground.jpg");
     background-size: contain;
 }
@@ -42,6 +40,7 @@ body {
     font-weight: bold;
     font-size: 3rem;
     text-decoration: underline;
+    text-decoration-skip-ink: none;
 }
 .birdBox {
     display: flex;
@@ -60,6 +59,8 @@ body {
     border-color: rgb(162, 133, 31);
     border-style: solid;
     margin-top: 30px;
+    line-height: 4rem;
+
 }
 .deleteButton{
      height:55px;
@@ -71,17 +72,14 @@ body {
      font-family: "Shadows Into Light", cursive;
      font-weight: bold;
      font-size: x-large;
- }
+}
 
 .deleteButton:hover {
     background-color: rgb(162, 133, 31);
 }
 .birdBox img{
     height: 20rem;
-    /*max-width: 70%;*/
-    /*max-height: 70%;*/
 }
-
 .submissionForm {
     justify-content: center;
     text-align: center;
@@ -98,13 +96,11 @@ body {
     margin-top: 30px;
     padding: 2rem;
 }
-
 .form{
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-
 .submissionFormContainer{
     display: flex;
     gap: 25px;
@@ -123,11 +119,6 @@ body {
     border-radius: 10px;
     display:flex;
     flex-direction: column;
-
-    /*text-align: center;*/
-    /*justify-content: center;*/
-    /*width:fit-content;*/
-    /*box-shadow: ;*/
     padding:0;
 }
 .submitButton{
@@ -150,5 +141,4 @@ body {
     font-weight: bold;
     text-decoration: underline wavy;
     text-decoration-skip-ink: none;
-
 }
