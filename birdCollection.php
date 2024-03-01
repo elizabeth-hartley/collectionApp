@@ -33,7 +33,7 @@ $birdsOfPray= $query->fetchAll();
             'Colour:'. ' '. $bird['color']. '<br>'.
             'When is the best time of year to spot them?'. '<br>'. $bird['season']. '<br>'.
             'What kind of habitat you\'ll find them in:'. '<br>'. $bird['habitat']. '<br>'.
-            'How many are left in the UK?'. ' '. '<br>'. 'There are around'. ' '. $bird['estimatedUKpopulation']. ' '. 'left in the UK.'.
+            'How many are left in the UK?'. ' '. '<br>'. 'There are around'. ' '. $bird['estimatedUKpopulation']. ' '. 'left in the UK.'. '<br>'.
             'How long does the'. ' '.  $bird['name']. ' '. 'live for?'.  '<br>'. $bird["ageSpanYear"]. ' '. '<br>'.
             '<a href="deleteBird.php?id=' . $bird['id']. '"><button class="deleteButton">Delete This Bird</button></a></div>';
     }
