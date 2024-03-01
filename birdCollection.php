@@ -20,7 +20,7 @@ $query->execute();
 
 $birdsOfPray= $query->fetchAll();
 ?>
-<img class="birdimage" src=IMG/BirdBoxImage.png>
+<img class="birdimage" id="main" src=IMG/BirdBoxImage.png>
 <div class="title">The Birdbox</div>
 <a class="addNewBirdLink" href="#addANewBird">add a new bird</a>
 <div class="birdBoxContainer">
@@ -64,7 +64,7 @@ $birdsOfPray= $query->fetchAll();
         <br>
     </div>
 </div>
-
+<a href="#main"><button id="totopbutton" title="Go to top">^</button></a>
 
 
 </body>
